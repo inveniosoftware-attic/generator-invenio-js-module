@@ -1,0 +1,40 @@
+{
+  "name": "generator-invenio-js-module",
+  "version": "0.0.1",
+  "description": "Invenio generator",
+  "author": {
+    "name": "CERN",
+    "email": "info@invenio-software.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inveniosoftware/generator-invenio-js-module"
+  },
+  "license": "GPLv2",
+  "dependencies": {
+    "yeoman-generator": "^0.21.1",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.2.0",
+    "yeoman-assert": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-coveralls": "^0.1.0"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "coverage": "gulp coveralls",
+    "test": "gulp test"
+  },
+  "bugs": {
+    "url": "https://github.com/inveniosoftware/generator-invenio-js-module/issues"
+  },
+  "homepage": "https://github.com/inveniosoftware/generator-invenio-js-module#readme"
+}
