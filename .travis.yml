@@ -35,7 +35,7 @@ node_js:
 env:
   global:
     - GH_REF: 'github.com/inveniosoftware/generator-invenio-js-module.git'
-    - secure: 'TOBE_ADDED'
+    - secure: 'dMVZ1jSH9iOe5KiLAGh7/nXLc2dXC+X5/d4s8R4Daf4wk2aMD7hNeLI0qn9aaCP9qokbGYE93dXuNEGw5hdD2meuy+sgAw5xW5wK9RqB9DIP6ehextRPzE24PeSWnaIHNe5CmJog5mAfkEW5+ic8j00rK9hs6COzUsl6d1S+TIfp9aNt/FXLs3T/g5AtxfHq4oH8XZx2J9VXFpCNUM0y1sGVBbhvosfdaoYK+yn6z22/yr63OHGyJEErnqT42TPSc1ycBhUoKC78unZVlUv/D1Tw85towRWrp8+3lfNku+UZ9TXKO+OjKuxzLGIi9iIwgM6VIT8jTWzxgAGL43l4IAhsbVFy+K50Ii507LnjSj4ZlbQSZu2V016UOdmykVzidGfTlH+fTEfNWJOBIVGgXP45i18s1L7867IvD4b+SGV4IWthpq22UlSggyBGr6jcgkIzydAQT+MHye4onJWcM+Oyqvr1qs4GxFp3+p1EDtbYpYKdPl7ADOsfrRy//Szx4f8Y5YQQI+nIItjQ1gia+0nM4hf+kedt0Uc+UEK6FCW4GpL5AzHsrXXWAjVYRJzLuLolBQKeArJDBr4GVspt4a0vL+2N29fL4tYnt4OUUijqjNCgflKzkQDBvSJ3a6meDMO9+G3ZatEYhDTP8/tCumLyVEIi+VivkKsybhMXh9A='
 
 before_script:
   - 'npm install -g gulp'
