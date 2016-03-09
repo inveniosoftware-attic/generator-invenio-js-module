@@ -59,4 +59,4 @@ deploy:
     tags: true
     repo: inveniosoftware/generator-invenio-js-module
     branch: master
-    - '5.7.1'
+    node: '5.7.1'
