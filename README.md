@@ -17,7 +17,7 @@ Installation
 How to use?
 -----------
 
-    $ yo invenio
+    $ yo invenio-js-module
 
 How to test?
 -----------
