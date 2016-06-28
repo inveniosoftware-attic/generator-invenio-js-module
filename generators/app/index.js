@@ -66,7 +66,7 @@ module.exports = yeoman.generators.Base.extend({
         type: 'input',
         name: 'author_email',
         message: 'Your project author\'s email',
-        default: 'info@invenio-software.org'
+        default: 'info@inveniosoftware.org'
       },
       {
         type: 'input',
