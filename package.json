@@ -4,7 +4,7 @@
   "description": "Invenio generator",
   "author": {
     "name": "CERN",
-    "email": "info@invenio-software.org"
+    "email": "info@inveniosoftware.org"
   },
   "repository": {
     "type": "git",
