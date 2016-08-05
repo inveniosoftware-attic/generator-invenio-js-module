@@ -189,7 +189,10 @@ module.exports = yeoman.generators.Base.extend({
       // gulp.js
       this.fs.copyTpl(
         this.templatePath('_gulpfile'),
-        this.destinationPath('gulpfile.js')
+        this.destinationPath('gulpfile.js'),
+        {
+          name: this.props.name,
+        }
       );
 
       // karma-src.conf.js
@@ -201,7 +204,8 @@ module.exports = yeoman.generators.Base.extend({
       // package.json
       this.fs.copyTpl(
         this.templatePath('_package'),
-        this.destinationPath('package.json'), {
+        this.destinationPath('package.json'),
+        {
           author_email: this.props.author_email,
           author_name: this.props.author_name,
           description: this.props.description,
@@ -233,6 +237,26 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copyTpl(
         this.templatePath('_test'),
         this.destinationPath('test/unit/app/app.spec.js')
+      );
+    },
+
+    /////////////////////
+
+    // Copy sample examples
+    examples: function() {
+
+      // src/app.spec.js
+      this.fs.copyTpl(
+        this.templatePath('_examples'),
+        this.destinationPath('examples/index.html')
+      );
+      this.fs.copyTpl(
+        this.templatePath('_examples'),
+        this.destinationPath('examples/simple/index.html')
+      );
+      this.fs.copyTpl(
+        this.templatePath('_empty_package'),
+        this.destinationPath('examples/simple/package.json')
       );
     }
   },

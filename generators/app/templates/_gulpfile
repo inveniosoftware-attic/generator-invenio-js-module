@@ -79,10 +79,12 @@ gulp.task('build', ['clean.build'], function (done) {
 gulp.task('build.src', function() {
   gulp.src(sourceFiles)
     .pipe(plugins.plumber())
-    .pipe(plugins.concat('invenio-search-js.js'))
+    .pipe(plugins.concat('<%= name %>.js'))
+    .pipe(plugins.stripComments())
+    .pipe(plugins.header(licences.javascript))
     .pipe(gulp.dest('./dist/'))
     .pipe(plugins.uglify())
-    .pipe(plugins.rename('invenio-search-js.min.js'))
+    .pipe(plugins.rename('<%= name %>.min.js'))
     .pipe(plugins.header(licences.javascript))
     .pipe(gulp.dest('./dist'));
 });
@@ -131,12 +133,18 @@ gulp.task('coveralls', function () {
  * Demo
  */
 
-gulp.task('demo', function() {
+// run the demo
+gulp.task('demo.run', function() {
   gulp.src(rootDirectory)
     .pipe(plugins.webserver({
       livereload: true,
-      open: '/example/index.html'
+      open: '/examples/index.html'
   }));
+});
+
+// run build and then the demo
+gulp.task('demo', function(done) {
+  runSequence('build', 'demo.run', done);
 });
 
 /**
