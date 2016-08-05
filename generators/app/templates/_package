@@ -11,9 +11,9 @@
     "url": "<%= repository %>"
   },
   "dependencies": {
-    "angular": "=1.4.8",
-    "angular-mocks": "=1.4.8",
-    "angular-scenario": "=1.4.8"
+    "angular": "=1.4.10",
+    "angular-mocks": "=1.4.10",
+    "angular-scenario": "=1.4.10"
   },
   "devDependencies": {
     "chai": "^1.9.1",
@@ -29,6 +29,7 @@
     "gulp-load-plugins": "^1.1.0",
     "gulp-plumber": "^0.6.6",
     "gulp-rename": "^1.2.0",
+    "gulp-strip-comments": "^2.4.3",
     "gulp-uglify": "^0.3.1",
     "gulp-webserver": "^0.9.1",
     "istanbul": "^0.4.1",
