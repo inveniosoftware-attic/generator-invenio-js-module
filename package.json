@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/inveniosoftware/generator-invenio-js-module"
   },
-  "license": "GPLv2",
+  "license": "MIT",
   "dependencies": {
     "yeoman-generator": "^0.21.1",
     "chalk": "^1.0.0",
